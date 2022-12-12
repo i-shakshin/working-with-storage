@@ -7,10 +7,10 @@
     <title>Document</title>
   </head>
   <body>
-    <form action="">
+    <form action="/">
       <div class="form-div">
-        <label for="name">Имя</label>
-        <input type="text" name="name" id="name" />
+        <label for="firstname">Имя</label>
+        <input type="text" name="firstname" id="firstname" />
       </div>
       <div class="form-div">
         <label for="lastname">Фамилия</label>
@@ -28,11 +28,17 @@
         <input type="submit" value="Добавить" />
       </div>
       <div class="form-div">
-        <p>Итоговые значения</p>
-        <textarea name="textarea" cols="40" rows="10"></textarea>
+        <label for="total">Итоговые значения</label>
+        <br />
+        <textarea
+          id="total"
+          disabled
+          name="textarea"
+          cols="40"
+          rows="10"
+        ></textarea>
       </div>
     </form>
-
     <script src="script.js"></script>
   </body>
 </html>
