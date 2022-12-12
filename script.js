@@ -86,12 +86,12 @@ window.onload = function () {
 };
 
 function showTotal() {
-  totalElement.innerHTML = `Имя: ${account.firstname} Фамилия: ${
-    account.lastname
-  }
-    Доходы: ${account.income}
-    Расходы: ${account.expense}
-    Баланс: ${account.accountBalance()}
+  totalElement.innerHTML = `Имя: ${account.firstname} 
+Фамилия: ${account.lastname}
+    
+Доходы: ${account.totalIncome()}
+Расходы: ${account.totalExpense()}
+Баланс: ${account.accountBalance()}
 `;
 }
 
